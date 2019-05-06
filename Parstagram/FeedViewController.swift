@@ -117,6 +117,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             cell.photoView.af_setImage(withURL: url)
             
+            
             return cell
         } else if indexPath.row <= comments.count {
             let cell = tableView.dequeueReusableCell(withIdentifier: "CommentCell") as! CommentCell

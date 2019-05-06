@@ -59,5 +59,6 @@ Here's a walkthrough of implemented user stories:
 <img src='http://g.recordit.co/YFENYBxvX6.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
+
 ## Bonus
 <img src='http://g.recordit.co/WUZEBQm8g2.gif' title='Bonus' width='' alt='Video Walkthrough' />

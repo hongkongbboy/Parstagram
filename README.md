@@ -27,7 +27,7 @@ Here's a walkthrough of implemented user stories:
 
 
 ## Bonus
-<img src='http://g.recordit.co/alvbNRQQIz.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/WUZEBQm8g2.gif' title='Bonus' width='' alt='Video Walkthrough' />
 
 
 
@@ -60,4 +60,4 @@ Here's a walkthrough of implemented user stories:
 
 
 ## Bonus
-<img src='http://g.recordit.co/alvbNRQQIz.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/WUZEBQm8g2.gif' title='Bonus' width='' alt='Video Walkthrough' />

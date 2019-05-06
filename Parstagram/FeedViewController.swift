@@ -117,6 +117,18 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             cell.photoView.af_setImage(withURL: url)
             
+            let query = PFUser.query()
+            query?.whereKey("username", equalTo: PFUser.current()!.username!)
+            
+            query?.findObjectsInBackground(block: { (objects, error) in
+                if error == nil {
+                    for object in objects! {
+                        if object["profileImage"] != nil {
+                            let profilePic = object["profileImage"] as! PFFileObject
+                            let urlString = profilePic.url!
+                            let picurl = URL(string: urlString)!
+                            cell.profilePostView.af_setImage(withURL: picurl)
+                        }}}})
             
             return cell
         } else if indexPath.row <= comments.count {
@@ -128,6 +140,18 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             let user = comment["author"] as! PFUser
             cell.nameLabel.text = user.username
 
+            let query = PFUser.query()
+            query?.whereKey("username", equalTo: PFUser.current()!.username!)
+            
+            query?.findObjectsInBackground(block: { (objects, error) in
+                if error == nil {
+                    for object in objects! {
+                        if object["profileImage"] != nil {
+                            let profilePic = object["profileImage"] as! PFFileObject
+                            let urlString = profilePic.url!
+                            let picurl = URL(string: urlString)!
+                            cell.profileCommentView.af_setImage(withURL: picurl)
+                        }}}})
             
             return cell
         } else {
